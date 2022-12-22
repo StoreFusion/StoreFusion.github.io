@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-html {
-  scroll-behavior: smooth;
-}
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
 
-#section1 {
-  height: 600px;
-  background-color: pink;
-}
+  /* Set a specific height */
+  min-height: 500px;
 
-#section2 {
-  height: 600px;
-  background-color: yellow;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
 </head>
 <body>
 
-<h1>Smooth Scroll</h1>
+<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
 
-<div class="main" id="section1">
-  <h2>Item 1</h2>
-  <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
-  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
-</div>
+<div class="parallax"></div>
 
-<div class="main" id="section2">
-  <h2>Item 2</h2>
-  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+<div style="height:1000px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
 
 </body>
